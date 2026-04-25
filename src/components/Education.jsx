@@ -9,7 +9,7 @@ const educationData = [
     id: 1,
     title: "B.Tech in Computer Science",
     place: "BIT Mesra",
-    year: "2022 – 2026",
+    year: "2023 – 2027",
     desc: "Focused on Operating Systems, DSA, and Web Development.",
     image: bitMesraImg,
     extra: "Participated in coding competitions, workshops, and open-source projects."
