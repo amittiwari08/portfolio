@@ -1,0 +1,146 @@
+/* ===== CONTACT CARD ===== */
+
+.contact-card {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  padding: 60px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  margin-bottom: 80px;
+  transition: 0.4s;
+}
+
+/* HOVER */
+
+.contact-card:hover {
+  border: 1px solid #c084fc;
+  box-shadow: 0 0 25px #c084fc;
+}
+
+/* TEXT */
+
+.contact-card h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #c084fc;
+}
+
+.contact-card p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+/* INFO */
+
+.contact-info {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.contact-info h4 {
+  margin-bottom: 5px;
+  color: #c084fc;
+}
+
+/* ===== FORM SECTION ===== */
+
+.form-section {
+  text-align: center;
+}
+
+.form-section h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #c084fc;
+}
+
+/* ===== FORM ===== */
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* INPUTS */
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  font-size: 16px;
+  outline: none;
+  background: rgba(255,255,255,0.05);
+  color: white;
+}
+
+/* PLACEHOLDER */
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+/* FOCUS */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #c084fc;
+}
+
+/* BUTTON */
+
+.contact-form button {
+  padding: 14px;
+  background: #c084fc;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #a855f7;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 30px;
+  }
+
+  .contact-info {
+    gap: 30px;
+    flex-direction: column;
+  }
+}
+
+.contact-link {
+  color: #c084fc;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+  }
+}

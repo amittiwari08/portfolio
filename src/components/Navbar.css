@@ -1,0 +1,79 @@
+.navbar {
+  height: 65px;              /* 🔥 thin navbar */
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* LOGO */
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #7b2ff7;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  padding: 5px 0;
+  transition: 0.3s;
+}
+
+/* hover underline */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(45deg,#7b2ff7,#c084fc);
+  transition: 0.4s;
+}
+
+/* hover effect */
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* 🔥 ACTIVE PAGE EFFECT */
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-links a.active {
+  color: #c084fc;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
